@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int RC_SIGN_IN = 1;
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
-    private Button baggage;
+    private Button baggage , flightstatus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         FirebaseAuthenticationProcess();
 
         baggage = (Button) findViewById(R.id.baggage) ;
+
 
         baggage.setOnClickListener(new View.OnClickListener() {
             @Override
