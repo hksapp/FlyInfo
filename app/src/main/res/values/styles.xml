@@ -10,7 +10,7 @@
 
     <style name="LoginTheme" parent="AppTheme.NoActionBar">
 
-        <item name="android:windowBackground">@drawable/flydubai</item>
+        <item name="android:windowBackground">@drawable/flydubaicropped</item>
         <item name="android:screenOrientation">portrait</item>
 
     </style>
