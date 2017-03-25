@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_screen);
 
         FirebaseAuthenticationProcess();
 
@@ -91,8 +91,7 @@ public class MainActivity extends AppCompatActivity {
                     // User is signed in
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
 
-                    Intent i = new Intent(MainActivity.this,MainScreen.class);
-                    startActivity(i);
+
                 } else {
 
                     // User is signed out
