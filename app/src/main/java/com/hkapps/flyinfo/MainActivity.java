@@ -33,6 +33,18 @@ public class MainActivity extends AppCompatActivity {
         FirebaseAuthenticationProcess();
 
         baggage = (Button) findViewById(R.id.baggage) ;
+        flightstatus = (Button) findViewById(R.id.flightstatus);
+
+
+        flightstatus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent Myintent = new Intent(MainActivity.this , FlightStatusActivity.class);
+                startActivity(Myintent);
+
+            }
+        });
 
 
         baggage.setOnClickListener(new View.OnClickListener() {
