@@ -8,6 +8,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.firebase.ui.auth.AuthUI;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int RC_SIGN_IN = 1;
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
+    private Button baggage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main_screen);
 
         FirebaseAuthenticationProcess();
+
+        baggage = (Button) findViewById(R.id.baggage) ;
+
+        baggage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Myintent = new Intent(MainActivity.this , BaggageActivity.class);
+                startActivity(Myintent);
+
+            }
+        });
 
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);

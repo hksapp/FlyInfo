@@ -265,6 +265,7 @@
                         android:layout_margin="22dp"
                         android:background="#fff176"
                         android:text="Explore!"
+                        android:id="@+id/baggage"
 
                         android:textAllCaps="false" />
 
